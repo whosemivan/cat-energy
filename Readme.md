@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Семёненко](https://up.htmlacademy.ru/adaptive/19/user/1087549).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
