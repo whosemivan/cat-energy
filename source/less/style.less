@@ -1,5 +1,4 @@
 @import "page-header.less";
-@import "first-screen.less";
 @import "categories.less";
 @import "advantages.less";
 @import "page-footer.less";
@@ -8,16 +7,19 @@
 @green: #68b738;
 @grey: #444444;
 @white: #ffffff;
-
-a {
-  text-decoration: none;
-}
+@tablet-width: 768px;
+@desktop-width: 1440px;
 
 body {
   background-color: #ffffff;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -41,4 +43,6 @@ img {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
