@@ -110,7 +110,8 @@
     height: 0;
 
     &::after {
-      content: "1";
+      counter-increment: section;
+      content: counter(section);
       font-size: 281px;
       color: #f2f2f2;
       position: absolute;
@@ -119,18 +120,6 @@
       z-index: -1;
       font-family: "Oswald", sans-serif;
     }
-  }
-
-  .advantages__item:nth-child(2) .advantages__item-number::after {
-    content: "2";
-  }
-
-  .advantages__item:nth-child(3) .advantages__item-number::after {
-    content: "3";
-  }
-
-  .advantages__item:nth-child(4) .advantages__item-number::after {
-    content: "4";
   }
 }
 
