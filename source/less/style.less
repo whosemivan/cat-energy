@@ -10,6 +10,8 @@
 @tablet-width: 768px;
 @desktop-width: 1300px;
 @mobile-width-only: 767px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 body {
   background-color: #ffffff;
@@ -19,6 +21,7 @@ body {
   font-family: "Oswald", sans-serif;
   counter-reset: section;
 }
+
 
 a {
   text-decoration: none;
@@ -55,4 +58,13 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.retina-background-image(@file, @file2x, @width, @height) {
+  background-image: url(@file);
+  background-size: @width @height;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(@file2x);
+  }
 }

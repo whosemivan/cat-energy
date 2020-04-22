@@ -131,15 +131,15 @@
 
   &::after {
     content: "";
-    background-image: url("../img/index-can-mobile@1x.png");
+    .retina-background-image("../img/index-can-mobile@1x.png", "../img/index-can-mobile@2x.png", 280px, auto);
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 280px;
-    height: 271px;
     position: absolute;
     top: 66%;
     left: 50%;
     transform: translate(-50%, -55%);
+    width: 280px;
+    height: 271px;
   }
 }
 
@@ -305,13 +305,13 @@
 
   .first-screen__picture {
     &::after {
-      background-image: url("../img/index-can-tablet@1x.jpg");
-      width: 709px;
-      height: 609px;
       position: absolute;
       top: 75%;
       left: 383px;
       transform: translate(-50%, -55%);
+      width: 709px;
+      height: 609px;
+      .retina-background-image("../img/index-can-tablet@1x.jpg", "../img/index-can-tablet@2x.jpg", 709px, auto);
     }
   }
 }
@@ -376,12 +376,12 @@
 
   .first-screen__picture {
     &::after {
-      background-image: url("../img/index-can-desktop@1x.png");
-      width: 709px;
-      height: 609px;
       z-index: 1;
-      left: 60.5%;
+      left: 57.5%;
       top: 62%;
+      width: 509px;
+      height: 500px;
+      .retina-background-image("../img/index-can-desktop@1x.png", "../img/index-can-desktop@2x.png", 509px, auto);
     }
   }
 
