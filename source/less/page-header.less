@@ -138,6 +138,10 @@
     top: 66%;
     left: 50%;
     transform: translate(-50%, -55%);
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 280px auto;
+    }
   }
 }
 
@@ -308,6 +312,10 @@
       left: 383px;
       transform: translate(-50%, -55%);
       .retina-background-image("../img/index-can-tablet@1x.jpg", "../img/index-can-tablet@2x.jpg", 709px, 609px);
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size: 709px auto;
+      }
     }
   }
 }
@@ -372,16 +380,13 @@
 
   .first-screen__picture {
     &::after {
-      background-image: url("../img/index-can-desktop@1x.png");
-      width: 709px;
-      height: 609px;
       z-index: 1;
       left: 60.5%;
       top: 62%;
+      .retina-background-image("../img/index-can-desktop@1x.png", "../img/index-can-desktop@2x.png", 709px, 609px);
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/index-can-desktop@2x.png");
-        background-size: 550px auto;
+        background-size: 509px auto;
       }
     }
   }
