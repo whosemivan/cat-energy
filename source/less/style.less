@@ -62,8 +62,7 @@ img {
 
 .retina-background-image(@file, @file2x, @width, @height) {
   background-image: url(@file);
-  width: @width;
-  height: @height;
+  background-size: @width @height;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url(@file2x);
