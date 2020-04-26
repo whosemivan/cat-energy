@@ -13,12 +13,22 @@
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
   background-color: #ffffff;
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   counter-reset: section;
 }
 
