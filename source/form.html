@@ -39,6 +39,85 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <form class="form" method="post">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <fieldset class="input-group">
+        <p>
+          <label for="user-name" class="input-group__label">Имя:*</label>
+          <input type="text" name="login" id="user-name" placeholder="Барсик" class="input-group__input">
+        </p>
+        <p>
+          <label for="weight" class="input-group__label">Вес (кг):*</label>
+          <input type="text" id="weight" name="weight" placeholder="7" class="input-group__input">
+        </p>
+        <p>
+          <label for="age" class="input-group__label">Возраст (лет):</label>
+          <input type="text" id="age" name="age" placeholder="7" class="input-group__input">
+        </p>
+      </fieldset>
+      <fieldset class="radio-group">
+        <p>
+          <input id="slim" type="radio" name="radio-button" class="radio-group__radio">
+          <label for="slim" class="radio-group__label">Похудение</label>
+        </p>
+        <p>
+          <input id="fat" type="radio" name="radio-button" class="radio-group__radio">
+          <label for="fat" class="radio-group__label">Набор массы</label>
+        </p>
+        <p>
+          <input id="advice" type="radio" name="radio-button" class="radio-group__radio">
+          <label for="advice" class="radio-group__label">Не знаю (Нужен ваш совет)</label>
+        </p>
+      </fieldset>
+      <fieldset class="information-group">
+        <h2>Контактные данные (владельца кота)</h2>
+        <p>
+          <label for="email" class="information-group__label">E-mail:*</label>
+          <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" class="information-group__input">
+        </p>
+        <p>
+          <label for="tel" class="information-group__label">Телефон:*</label>
+          <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" class="information-group__input">
+        </p>
+      </fieldset>
+      <fieldset class="comment-group">
+        <h2>Комментарий</h2>
+        <label for="comment" class="comment-group__label"></label>
+        <input type="text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота" class="comment-group__input">
+      </fieldset>
+      <fieldset class="checkbox-group">
+        <p>
+          <input type="checkbox" id="sweetener" name="sweetener" class="checkbox-group__checkbox">
+          <label for="sweetener" class="checkbox-group__label">Сахарозаменитель</label>
+        </p>
+        <p>
+          <input type="checkbox" id="water" name="water" class="checkbox-group__checkbox">
+          <label for="water" class="checkbox-group__label">Питьевая вода</label>
+        </p>
+        <p>
+          <input type="checkbox" id="milk" name="milk" class="checkbox-group__checkbox">
+          <label for="milk" class="checkbox-group__label">Молоко</label>
+        </p>
+        <p>
+          <input type="checkbox" id="vitamins" name="vitamins" class="checkbox-group__checkbox">
+          <label for="vitamins" class="checkbox-group__label">Витамины</label>
+        </p>
+      </fieldset>
+      <button class="form__btn" type="submit">Отправить заявку</button>
+      <p>* — Обязательные поля </p>
+    </form>
+    <section class="map">
+      <div class="map__address">
+        <p>приглашаем к сотрудничеству дилеров!</p>
+        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <picture>
+        <img src="img/bg-map-mobile@1x.png" alt="Карта">
+      </picture>
+    </section>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a href="index.html" class="page-footer__logo">
