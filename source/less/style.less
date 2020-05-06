@@ -3,6 +3,15 @@
 @import "advantages.less";
 @import "page-footer.less";
 @import "catalog.less";
+@import "example.less";
+@import "map.less";
+@import "additional-goods.less";
+@import "form.less";
+@import "input-group.less";
+@import "radio-group.less";
+@import "information-group.less";
+@import "comment-group.less";
+@import "checkbox-group.less";
 
 @green: #68b738;
 @grey: #444444;
@@ -76,6 +85,41 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.button {
+  background-color: @green;
+  color: @white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 34%;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.input {
+  border: 1px solid #ededed;
+  width: 227px;
+  height: 43px;
+  padding-left: 15px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Oswald", "Tahoma", sans-serif;
+  }
 }
 
 .retina-background-image(@file, @file2x, @width, @height) {
