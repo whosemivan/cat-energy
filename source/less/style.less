@@ -107,6 +107,21 @@ img {
   font-weight: 400;
 }
 
+.input {
+  border: 1px solid #ededed;
+  width: 227px;
+  height: 43px;
+  padding-left: 15px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Oswald", "Tahoma", sans-serif;
+  }
+}
+
 .retina-background-image(@file, @file2x, @width, @height) {
   background-image: url(@file);
   background-size: @width @height;
