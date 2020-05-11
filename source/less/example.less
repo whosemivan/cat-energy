@@ -1,16 +1,51 @@
+.example {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  margin-bottom: 0;
+}
+
+.example__wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.example__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.example__stats-wrapper {
+  display: flex;
+}
+
 .example__title {
   .title;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__item {
   font-family: "Arial", sans-serif;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-right: 30px;
+  }
 }
 
 .example__subtitle {
@@ -23,4 +58,102 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__image-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background: none;
+  }
+
+  .example__wrapper {
+    width: 90%;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__item {
+    font-size: 14px;
+
+    &:first-child {
+      margin-right: 40px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 170px;
+    }
+  }
+
+  .example__price {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .example__subtitle {
+    font-size: 30px;
+  }
+
+  .example__image-wrapper {
+    background-color: #f2f2f2;
+  }
+
+  .example__stats {
+    width: 90%;
+    margin-bottom: 125px;
+  }
+
+  .example__image {
+    margin-top: -90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: #f2f2f2;
+    flex-direction: row;
+  }
+
+  .example__title {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+
+  .example__text {
+    width: 435px;
+  }
+
+  .example__stats {
+    flex-direction: column;
+  }
+
+  .example__price {
+    flex-direction: row;
+  }
+
+  .example__wrapper {
+    width: 45%;
+  }
+
+  .example__image-wrapper {
+    width: 45%;
+  }
+
+  .example__image {
+    margin-top: 0;
+  }
 }

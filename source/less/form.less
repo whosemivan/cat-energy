@@ -1,16 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
 .form__title {
   .title;
+  margin-top: 0;
 }
 
 .form__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .form__btn {
   .button;
-  padding: 10px 24.6%;
+  padding: 10px 27.5%;
   font-family: "Oswald", "Tahoma", sans-serif;
   border: none;
 }
@@ -18,4 +28,61 @@
 .form__required-fields {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    width: 708px;
+    margin-bottom: 70px;
+  }
+
+  .form__wrapper {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .form__btn {
+    padding: 10px 12.5%;
+    margin-right: 60px;
+  }
+
+  .form__container {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 69px;
+    margin-bottom: 33px;
+  }
+
+  .form__text {
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 54px;
+  }
+
+  .form {
+    width: 1220px;
+  }
+
+  .form__wrapper {
+    width: 1220px;
+  }
+
+  .form__box {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  .form__btn {
+    padding: 10px 224px;
+  }
 }

@@ -96,32 +96,41 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="example__stats">
-        <p class="example__item">
-          <span class="example__subtitle">5 кг</span>
-          снижение веса
-        </p>
-        <p class="example__item">
-          <span class="example__subtitle">60 дней</span>
-          затрачено времени
-        </p>
-        <p class="example__price">Затраты на питание: <span>15 000 руб.</span></p>
+      <div class="example__wrapper">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <div class="example__stats">
+          <div class="example__stats-wrapper">
+            <p class="example__item">
+              <span class="example__subtitle">5 кг</span>
+              снижение веса
+            </p>
+            <p class="example__item">
+              <span class="example__subtitle">60 дней</span>
+              затрачено времени
+            </p>
+          </div>
+          <p class="example__price">Затраты на питание: <span>15 000 руб.</span></p>
+        </div>
+      </div>
+      <div class="example__image-wrapper">
         <picture>
-          <img src="img/before-mobile@1x.png" alt="Котик">
+          <img class="example__image" src="img/before-mobile@1x.png" alt="Котик">
         </picture>
         <input class="visually-hidden example__input" type="checkbox" id="example__input">
         <label for="example__input"></label>
       </div>
     </section>
     <section class="map">
-      <div class="map__address">
-        <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
+      <div class="map__wrapper">
+        <p class="map__text">приглашаем <span>к сотрудничеству</span> дилеров!</p>
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <picture>
-        <img src="img/bg-map-mobile@1x.png" alt="Карта">
+      <picture class="map__picture">
+        <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
+        <source srcset="img/bg-map-tablet@1x.png" media="(max-width: 1299px)">
+        <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта">
       </picture>
     </section>
   </main>

@@ -1,5 +1,8 @@
 .map {
-  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
 }
 
 .map__text {
@@ -7,10 +10,61 @@
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", sans-serif;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 20px;
 }
 
 .map__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
+  margin: 0;
+}
+
+.map__wrapper {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.map__picture {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .map__wrapper {
+    width: 630px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__wrapper {
+    position: absolute;
+    z-index: 2;
+    left: 121px;
+    top: 95px;
+    background-color: @white;
+    width: 38%;
+    padding: 70px 12px;
+  }
+
+  .map__text {
+    font-size: 20px;
+    width: 170px;
+    margin-right: 80px;
+  }
+
+  .map__address {
+    font-size: 16px;
+    width: 164px;
+  }
 }

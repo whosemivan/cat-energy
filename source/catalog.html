@@ -227,54 +227,70 @@
     </section>
     <section class="additional-goods">
       <h2 class="additional-goods__title">Дополнительные товары</h2>
-      <ul class="additional-goods__list additional-list">
-        <li class="additional-list__item">
-          <h3 class="additional-list__title">Сахарозаменитель</h3>
-          <dl class="additional-list__information">
-            <dt>1 упаковка (100 г)</dt>
-            <dd>200 Р.</dd>
-          </dl>
-          <a class="additional-list__link" href="#">Заказать</a>
-        </li>
-        <li class="additional-list__item">
-          <h3 class="additional-list__title">Питьевая вода</h3>
-          <dl class="additional-list__information">
-            <dt>5 литров</dt>
-            <dd>50 Р.</dd>
-          </dl>
-          <a class="additional-list__link" href="#">Заказать</a>
-        </li>
-        <li class="additional-list__item">
-          <h3 class="additional-list__title">Молоко</h3>
-          <dl class="additional-list__information">
-            <dt>1 литр</dt>
-            <dd>100 Р.</dd>
-          </dl>
-          <a class="additional-list__link" href="#">Заказать</a>
-        </li>
-        <li class="additional-list__item">
-          <h3 class="additional-list__title">Витамины</h3>
-          <dl class="additional-list__information">
-            <dt>1 упаковка (30 г)</dt>
-            <dd>300 Р.</dd>
-          </dl>
-          <a class="additional-list__link" href="#">Заказать</a>
-        </li>
-      </ul>
       <div class="additional-goods__wrapper">
-        <p class="additional-goods__stock">Закажите все и получите чехол для кота в подарок!</p>
-        <picture class="additional-goods__picture">
-          <img class="additional-goods__image" src="img/gift-photo-mobile@1x.jpg" width="290" height="289" alt="Кот">
-        </picture>
+        <ul class="additional-goods__list additional-list">
+          <li class="additional-list__item">
+            <div class="additional-list__wrapper">
+              <h3 class="additional-list__title">Сахарозаменитель</h3>
+              <dl class="additional-list__information">
+                <dt class="additional-list__value">1 упаковка (100 г)</dt>
+                <dd class="additional-list__field">200 Р.</dd>
+              </dl>
+            </div>
+            <a class="additional-list__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-list__item">
+            <div class="additional-list__wrapper">
+              <h3 class="additional-list__title">Питьевая вода</h3>
+              <dl class="additional-list__information">
+                <dt class="additional-list__value">5 литров</dt>
+                <dd class="additional-list__field">50 Р.</dd>
+              </dl>
+            </div>
+            <a class="additional-list__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-list__item">
+            <div class="additional-list__wrapper">
+              <h3 class="additional-list__title">Молоко</h3>
+              <dl class="additional-list__information">
+                <dt class="additional-list__value">1 литр</dt>
+                <dd class="additional-list__field">100 Р.</dd>
+              </dl>
+            </div>
+            <a class="additional-list__link" href="#">Заказать</a>
+          </li>
+          <li class="additional-list__item">
+            <div class="additional-list__wrapper">
+              <h3 class="additional-list__title">Витамины</h3>
+              <dl class="additional-list__information">
+                <dt class="additional-list__value">1 упаковка (30 г)</dt>
+                <dd class="additional-list__field">300 Р.</dd>
+              </dl>
+            </div>
+            <a class="additional-list__link" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="additional-goods__present">
+          <p class="additional-goods__stock">Закажите все и получите чехол для кота в подарок!</p>
+          <picture class="additional-goods__picture">
+            <source srcset="img/gift-photo-mobile@1x.jpg" media="(max-width: 767px)">
+            <source srcset="img/gift-photo-tablet@1x.jpg" media="(max-width: 1299px)">
+            <source srcset="img/gift-photo-desktop@1x.jpg" media="(min-width: 1300px)">
+            <img class="additional-goods__image" src="img/gift-photo-mobile@1x.jpg" alt="Кот">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="map">
-      <div class="map__address">
-        <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
+      <div class="map__wrapper">
+        <p class="map__text">приглашаем <span>к сотрудничеству</span> дилеров!</p>
         <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <picture>
-        <img src="img/bg-map-mobile@1x.png" alt="Карта">
+      <picture class="map__picture">
+        <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
+        <source srcset="img/bg-map-tablet@1x.png" media="(max-width: 1299px)">
+        <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта">
       </picture>
     </section>
   </main>
