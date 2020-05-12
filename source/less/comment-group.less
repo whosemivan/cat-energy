@@ -1,6 +1,8 @@
 .comment-group {
   border: none;
   border-bottom: 1px solid #ededed;
+  margin: 0;
+  padding: 0;
 }
 
 .comment-group__title {
@@ -10,7 +12,7 @@
 .comment-group__input {
   border: 1px solid #ededed;
   padding-left: 15px;
-  width: 278px;
+  width: 261px;
   height: 148px;
 
   &::placeholder {
@@ -20,5 +22,32 @@
     color: #444444;
     font-family: "Oswald", "Tahoma", sans-serif;
     font-weight: 400;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comment-group__input {
+    width: 612px;
+    height: 168px;
+  }
+
+  .comment-group {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment-group__input {
+    width: 1203px;
+    height: 168px;
+  }
+
+  .comment-group__title {
+    font-size: 36px;
+    margin-bottom: 70px;
+  }
+
+  .comment-group {
+    margin-bottom: 30px;
   }
 }
