@@ -1,19 +1,39 @@
 .comment-group {
   border: none;
-  border-bottom: 1px solid #ededed;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.comment-group__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .comment-group__title {
   .subtitle;
+  margin-top: 4px;
+  margin-bottom: 29px;
+  position: relative;
+  padding-left: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 158px;
+    top: 20px;
+    height: 3px;
+    background-color: @green;
+  }
 }
 
 .comment-group__input {
   border: 1px solid #ededed;
   padding-left: 15px;
+  padding-bottom: 100px;
   width: 261px;
-  height: 148px;
+  height: 47px;
 
   &::placeholder {
     font-size: 16px;
@@ -23,31 +43,104 @@
     font-family: "Oswald", "Tahoma", sans-serif;
     font-weight: 400;
   }
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .comment-group__input {
     width: 612px;
-    height: 168px;
+    height: 55px;
+    padding-bottom: 114px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
   }
 
   .comment-group {
     border: none;
+    margin-bottom: 26px;
+  }
+
+  .comment-group__title {
+    .title;
+    margin-bottom: 63px;
+    padding-left: 69px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 479px;
+      top: 32px;
+      height: 3px;
+      background-color: @green;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      top: 32px;
+      height: 3px;
+      background-color: @green;
+    }
+  }
+
+  .comment-group__wrapper {
+    width: 630px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment-group__input {
     width: 1203px;
-    height: 168px;
+    height: 55px;
   }
 
   .comment-group__title {
     font-size: 36px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+    margin-top: 18px;
+    padding-left: 109px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1111px;
+      top: 34px;
+      height: 3px;
+      background-color: @green;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 70px;
+      top: 34px;
+      height: 3px;
+      background-color: @green;
+    }
   }
 
   .comment-group {
     margin-bottom: 30px;
+  }
+
+  .comment-group__wrapper {
+    width: 1220px;
   }
 }

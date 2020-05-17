@@ -1,14 +1,20 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 88%;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 17px;
+}
+
+.form__box {
+  width: 100%;
 }
 
 .form__title {
   .title;
-  margin-top: 0;
+  margin-top: -7px;
+  margin-right: 20px;
 }
 
 .form__text {
@@ -16,11 +22,14 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 0;
+  width: 228px;
+  margin-bottom: 22px;
+  margin-right: 52px;
 }
 
 .form__btn {
   .button;
-  padding: 10px 27.5%;
+  padding: 10px 79px;
   font-family: "Oswald", "Tahoma", sans-serif;
   border: none;
 }
@@ -35,54 +44,74 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    width: 708px;
     margin-bottom: 70px;
+    align-items: flex-start;
   }
 
-  .form__wrapper {
-    width: 630px;
-    margin: 0 auto;
+  .form__title {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 28px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    width: 354px;
+    line-height: 30px;
+    margin-left: 70px;
+    margin-top: 55px;
   }
 
   .form__btn {
-    padding: 10px 12.5%;
+    padding: 10px 65px;
     margin-right: 60px;
+    margin-left: 71px;
+    font-size: 20px;
   }
 
   .form__container {
     display: flex;
   }
+
+  .form__required-fields {
+    font-size: 16px;
+    margin-top: 16px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 31px;
+  }
+
   .form__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 69px;
+    margin-top: 16px;
     margin-bottom: 33px;
+    margin-left: 110px;
   }
 
   .form__text {
     width: 325px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 54px;
-  }
-
-  .form {
-    width: 1220px;
-  }
-
-  .form__wrapper {
-    width: 1220px;
+    margin-left: 110px;
+    margin-top: 21px;
   }
 
   .form__box {
     display: flex;
+    margin: 0 auto;
     margin-bottom: 15px;
+    padding-top: 43px;
+    width: 1220px;
   }
 
   .form__btn {
-    padding: 10px 224px;
+    padding: 10px 208px;
+    margin-left: 111px;
+    margin-right: 81px;
   }
 }

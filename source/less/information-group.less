@@ -3,15 +3,36 @@
   border-bottom: 1px solid #ededed;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.information-group__box {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .information-group__title {
   .subtitle;
+  line-height: 24px;
+  margin-bottom: 29px;
+  position: relative;
+  padding-right: 112px;
+  padding-left: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 99px;
+    top: 12px;
+    height: 3px;
+    background-color: @green;
+  }
 }
 
 .information-group__label {
   .label;
-  margin-right: 15px;
+  margin-right: 11px;
   display: flex;
   align-items: center;
 }
@@ -21,18 +42,33 @@
   width: 200px;
 }
 
+.information-group__input:active .information-group__label::after {
+  fill: @green;
+}
+
 .information-group__wrapper {
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 
 .information-group__wrapper:last-child .information-group__input {
   width: 185px;
 }
 
+.information-group__icon {
+  position: absolute;
+  right: 16px;
+  top: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .information-group__input {
     width: 532px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
   }
 
   .information-group__wrapper:last-child .information-group__input {
@@ -41,17 +77,55 @@
 
   .information-group {
     border: none;
+    padding-left: 0;
+    margin-bottom: 27px;
   }
 
   .information-group__label {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .information-group__title {
+    .title;
+    margin-top: 67px;
+    margin-bottom: 67px;
+    padding-left: 68px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 145px;
+      top: 33px;
+      height: 3px;
+      background-color: @green;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      left: 0;
+      top: 33px;
+      height: 3px;
+      background-color: @green;
+    }
+  }
+
+  .information-group__wrapper {
+    margin-bottom: 25px;
+  }
+
+  .information-group__box {
+    width: 630px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .information-group__box {
     display: flex;
+    width: 1220px;
   }
 
   .information-group__input {
@@ -68,7 +142,29 @@
 
   .information-group__title {
     font-size: 36px;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
+    margin-top: -6px;
+    padding-left: 109px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 777px;
+      top: 33px;
+      height: 3px;
+      background-color: @green;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      left: 0;
+      top: 33px;
+      height: 3px;
+      background-color: @green;
+    }
   }
 
   .information-group__label {
