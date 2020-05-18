@@ -25,15 +25,15 @@
       </a>
       <button class="page-header__nav-button page-header__nav-button--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -102,12 +102,12 @@
         <div class="example__stats">
           <div class="example__stats-wrapper">
             <p class="example__item">
-              <span class="example__subtitle">5 кг</span>
-              снижение веса
+              5 кг
+              <span class="example__subtitle">снижение веса</span>
             </p>
             <p class="example__item">
-              <span class="example__subtitle">60 дней</span>
-              затрачено времени
+              60 дней
+              <span class="example__subtitle">затрачено времени</span>
             </p>
           </div>
           <p class="example__price">Затраты на питание: <span>15 000 руб.</span></p>
@@ -130,10 +130,12 @@
       </div>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map__wrapper">
         <p class="map__text">приглашаем <span>к сотрудничеству</span> дилеров!</p>
         <p class="map__address"><span>ул. Большая</span> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
+      <iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.3208587159103!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589811999841!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <picture class="map__picture">
         <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
         <source srcset="img/bg-map-tablet@1x.png" media="(max-width: 1299px)">

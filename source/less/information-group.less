@@ -1,9 +1,11 @@
 .information-group {
   border: none;
   border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 .information-group__box {
@@ -14,17 +16,17 @@
 .information-group__title {
   .subtitle;
   line-height: 24px;
+  margin: 0 auto;
+  margin-top: 32px;
   margin-bottom: 29px;
-  position: relative;
-  padding-right: 112px;
-  padding-left: 19px;
+  width: 280px;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    width: 99px;
-    top: 12px;
+    left: 70%;
+    top: 45px;
     height: 3px;
     background-color: @green;
   }
@@ -90,14 +92,14 @@
     .title;
     margin-top: 67px;
     margin-bottom: 67px;
-    padding-left: 68px;
+    width: 630px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      width: 145px;
-      top: 33px;
+      left: 81%;
+      top: 100px;
       height: 3px;
       background-color: @green;
     }
@@ -105,9 +107,9 @@
     &::before {
       content: "";
       position: absolute;
-      width: 30px;
+      right: 96%;
       left: 0;
-      top: 33px;
+      top: 100px;
       height: 3px;
       background-color: @green;
     }
@@ -126,6 +128,7 @@
   .information-group__box {
     display: flex;
     width: 1220px;
+    margin: 0 auto;
   }
 
   .information-group__input {
@@ -144,14 +147,16 @@
     font-size: 36px;
     margin-bottom: 50px;
     margin-top: -6px;
-    padding-left: 109px;
+    display: flex;
+    width: 1220px;
+    justify-content: flex-start;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      width: 777px;
-      top: 33px;
+      left: 46%;
+      top: 28px;
       height: 3px;
       background-color: @green;
     }
@@ -159,9 +164,9 @@
     &::before {
       content: "";
       position: absolute;
-      width: 70px;
+      right: 95%;
       left: 0;
-      top: 33px;
+      top: 28px;
       height: 3px;
       background-color: @green;
     }

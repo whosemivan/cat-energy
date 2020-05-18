@@ -34,19 +34,23 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   width: 270px;
 }
 
 .example__item {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 122px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #cfcfcf;
-  border-radius: 3px;
-  width: 122px;
+  min-height: 54px;
+  margin-top: 18px;
+  position: relative;
 
   &:first-child {
     margin-right: 30px;
@@ -54,16 +58,21 @@
 }
 
 .example__subtitle {
-  font-family: "Oswald", "Tahoma", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  background-color: #f2f2f2;
+  position: absolute;
+  text-transform: none;
+  width: 80px;
+  text-align: center;
+  top: 43px;
 }
 
 .example__price {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
 }
 
 .example__image-wrapper {
@@ -139,7 +148,7 @@
 
   .example__wrapper {
     width: 708px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 
   .example__title {
@@ -156,8 +165,9 @@
   }
 
   .example__item {
-    font-size: 14px;
+    font-size: 30px;
     width: 159px;
+    min-height: 66px;
 
     &:first-child {
       margin-right: 43px;
@@ -172,7 +182,10 @@
   }
 
   .example__subtitle {
-    font-size: 30px;
+    font-size: 14px;
+    background-color: @white;
+    width: 140px;
+    top: 57px;
   }
 
   .example__image-wrapper {
@@ -282,6 +295,11 @@
     &:first-child {
       margin-right: 41px;
     }
+  }
+
+  .example__subtitle {
+    background-color: #f2f2f2;
+    top: 60px;
   }
 
   .example__stats {

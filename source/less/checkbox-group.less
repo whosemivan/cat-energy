@@ -1,36 +1,38 @@
 .checkbox-group {
   border: none;
-  border-bottom: 1px solid #ededed;
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
   width: 100%;
+  position: relative;
 }
 
 .checkbox-group__title {
   .subtitle;
-  position: relative;
-  padding-left: 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 22px;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 22px;
+    left: 58%;
+    top: 44px;
     height: 3px;
-    width: 135px;
     background-color: @green;
   }
 }
 
 .checkbox-group__label {
   .label;
-  padding-left: 66px;
+  padding-left: 46px;
   position: relative;
 }
 
 .checkbox-group__container {
-  margin-top: 36px;
+  margin: 0 auto;
+  margin-top: 31px;
   width: 280px;
 }
 
@@ -41,7 +43,7 @@
 .checkbox-group__checkbox + .checkbox-group__label::before {
   content: "";
   position: absolute;
-  left: 20px;
+  left: 0;
   width: 28px;
   height: 28px;
   border: 1px solid #d1d1d1;
@@ -51,7 +53,7 @@
 .checkbox-group__checkbox:checked + .checkbox-group__label::after {
   content: "";
   position: absolute;
-  left: 25px;
+  left: 5px;
   top: 7px;
   width: 21px;
   height: 16px;
@@ -96,15 +98,15 @@
 
   .checkbox-group__title {
     .title;
-    padding-left: 69px;
+    width: 630px;
     margin-bottom: 35px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      top: 32px;
-      width: 446px;
+      left: 42%;
+      top: 57px;
       height: 3px;
       background-color: @green;
     }
@@ -112,10 +114,10 @@
     &::before {
       content: "";
       position: absolute;
+      right: 96%;
       left: 0;
-      top: 32px;
+      top: 57px;
       height: 3px;
-      width: 30px;
       background-color: @green;
     }
   }
@@ -175,14 +177,14 @@
     font-size: 36px;
     margin-bottom: 38px;
     margin-top: 25px;
-    padding-left: 109px;
+    width: 1220px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      top: 34px;
-      width: 1078px;
+      left: 25%;
+      top: 60px;
       height: 3px;
       background-color: @green;
     }
@@ -190,10 +192,10 @@
     &::before {
       content: "";
       position: absolute;
+      right: 95%;
       left: 0;
-      top: 34px;
+      top: 60px;
       height: 3px;
-      width: 70px;
       background-color: @green;
     }
   }

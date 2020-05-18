@@ -21,15 +21,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 0;
-  width: 228px;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 22px;
-  margin-right: 52px;
 }
 
 .form__btn {
   .button;
-  padding: 10px 79px;
+  padding: 10px 78px;
   font-family: "Oswald", "Tahoma", sans-serif;
   border: none;
 }
@@ -42,6 +41,11 @@
   margin-top: 22px;
 }
 
+.form__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .form {
     margin-bottom: 70px;
@@ -50,28 +54,27 @@
 
   .form__title {
     font-size: 60px;
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 0;
-    margin-left: 28px;
+    width: 708px;
   }
 
   .form__text {
     font-size: 20px;
-    width: 354px;
+    width: 630px;
     line-height: 30px;
-    margin-left: 70px;
     margin-top: 55px;
   }
 
   .form__btn {
     padding: 10px 65px;
     margin-right: 60px;
-    margin-left: 71px;
     font-size: 20px;
   }
 
   .form__container {
     display: flex;
+    width: 630px;
   }
 
   .form__required-fields {
@@ -104,14 +107,17 @@
   .form__box {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 15px;
     padding-top: 43px;
     width: 1220px;
   }
 
   .form__btn {
     padding: 10px 208px;
-    margin-left: 111px;
     margin-right: 81px;
+  }
+
+  .form__container {
+    display: flex;
+    width: 1220px;
   }
 }
