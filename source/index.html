@@ -120,8 +120,6 @@
         </div>
         <div class="example__inputs">
           <button type="button" class="example__btn">Было</button>
-          <input class="example__input" type="range" id="example__input" min="1" max="100" value="50">
-          <label for="example__input"></label>
           <span class="example__bar">
             <span class="example__toggle"></span>
           </span>
@@ -137,10 +135,10 @@
       </div>
       <iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.3208587159103!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589811999841!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <picture class="map__picture">
-        <source srcset="img/bg-map-mobile@1x.png" media="(max-width: 767px)">
-        <source srcset="img/bg-map-tablet@1x.png" media="(max-width: 1299px)">
-        <source srcset="img/bg-map-desktop@1x.png" media="(min-width: 1300px)">
-        <img class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта">
+        <source srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" media="(max-width: 767px)">
+        <source srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" media="(max-width: 1299px)">
+        <source srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" media="(min-width: 1300px)">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png" alt="Карта">
       </picture>
     </section>
   </main>
