@@ -1,26 +1,34 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 88%;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 17px;
+}
+
+.form__box {
+  width: 100%;
 }
 
 .form__title {
   .title;
-  margin-top: 0;
+  margin-top: -7px;
+  margin-right: 20px;
 }
 
 .form__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .form__btn {
   .button;
-  padding: 10px 27.5%;
+  padding: 10px 78px;
   font-family: "Oswald", "Tahoma", sans-serif;
   border: none;
 }
@@ -33,56 +41,83 @@
   margin-top: 22px;
 }
 
+.form__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .form {
-    width: 708px;
     margin-bottom: 70px;
+    align-items: flex-start;
   }
 
-  .form__wrapper {
-    width: 630px;
+  .form__title {
+    font-size: 60px;
     margin: 0 auto;
+    margin-bottom: 0;
+    width: 708px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    width: 630px;
+    line-height: 30px;
+    margin-top: 55px;
   }
 
   .form__btn {
-    padding: 10px 12.5%;
+    padding: 10px 65px;
     margin-right: 60px;
+    font-size: 20px;
   }
 
   .form__container {
     display: flex;
+    width: 630px;
+  }
+
+  .form__required-fields {
+    font-size: 16px;
+    margin-top: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 31px;
+  }
+
   .form__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 69px;
+    margin-top: 16px;
     margin-bottom: 33px;
+    margin-left: 110px;
   }
 
   .form__text {
     width: 325px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 54px;
-  }
-
-  .form {
-    width: 1220px;
-  }
-
-  .form__wrapper {
-    width: 1220px;
+    margin-left: 110px;
+    margin-top: 21px;
   }
 
   .form__box {
     display: flex;
-    margin-bottom: 15px;
+    margin: 0 auto;
+    padding-top: 43px;
+    width: 1220px;
   }
 
   .form__btn {
-    padding: 10px 224px;
+    padding: 10px 208px;
+    margin-right: 81px;
+  }
+
+  .form__container {
+    display: flex;
+    width: 1220px;
   }
 }

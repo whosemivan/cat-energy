@@ -12,6 +12,8 @@
 @import "information-group.less";
 @import "comment-group.less";
 @import "checkbox-group.less";
+@import "first-screen.less";
+@import "logo.less";
 
 @green: #68b738;
 @grey: #444444;
@@ -118,6 +120,16 @@ img {
     text-transform: uppercase;
     color: #444444;
     font-family: "Oswald", "Tahoma", sans-serif;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
   }
 }
 
