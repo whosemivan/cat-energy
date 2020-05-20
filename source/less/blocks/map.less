@@ -45,12 +45,16 @@
 }
 
 .map__picture {
-  margin: 0 auto;
   position: absolute;
   z-index: 1;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, 0%);
+  height: 360px;
+}
+
+.map__image {
+  height: 360px;
 }
 
 @media (min-width: @tablet-width) {
@@ -79,6 +83,18 @@
     flex-direction: column;
     align-items: flex-end;
   }
+
+  .map__map {
+    height: 390px;
+  }
+
+  .map__image {
+    height: 390px;
+  }
+
+  .map__picture {
+    height: 390px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -105,5 +121,17 @@
   .map__address {
     font-size: 16px;
     width: 164px;
+  }
+
+  .map__map {
+    height: 400px;
+  }
+
+  .map__image {
+    height: 400px;
+  }
+
+  .map__picture {
+    height: 400px;
   }
 }

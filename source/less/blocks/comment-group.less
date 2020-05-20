@@ -13,19 +13,21 @@
 
 .comment-group__title {
   .subtitle;
-  margin: 0 auto;
   margin-top: 4px;
   margin-bottom: 29px;
-  width: 280px;
+  width: 128px;
+  padding-right: 20px;
+  background-color: @white;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    left: 50%;
+    left: 249px;
     top: 23px;
     height: 3px;
     background-color: @green;
+    z-index: -1;
   }
 }
 
@@ -75,7 +77,9 @@
   .comment-group__title {
     .title;
     margin-bottom: 63px;
-    width: 630px;
+    width: 183px;
+    padding-left: 40px;
+    margin-left: -40px;
     display: flex;
     justify-content: flex-start;
 
@@ -83,16 +87,6 @@
       content: "";
       position: absolute;
       right: 0;
-      left: 40%;
-      top: 37px;
-      height: 3px;
-      background-color: @green;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 96%;
       left: 0;
       top: 37px;
       height: 3px;
@@ -116,22 +110,12 @@
     font-size: 36px;
     margin-bottom: 65px;
     margin-top: 18px;
-    width: 1220px;
+    width: 190px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      left: 23%;
-      top: 50px;
-      height: 3px;
-      background-color: @green;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 95%;
       left: 0;
       top: 50px;
       height: 3px;
