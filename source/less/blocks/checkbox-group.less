@@ -10,15 +10,15 @@
 .checkbox-group__title {
   .subtitle;
   width: 280px;
-  margin: 0 auto;
   margin-top: 22px;
+  margin-bottom: 28px;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
     left: 58%;
-    top: 44px;
+    top: 40px;
     height: 3px;
     background-color: @green;
   }
@@ -32,7 +32,7 @@
 
 .checkbox-group__container {
   margin: 0 auto;
-  margin-top: 31px;
+  margin-top: 20px;
   width: 280px;
 }
 
@@ -69,9 +69,14 @@
 @media (min-width: @tablet-width) {
   .checkbox-group__container {
     display: flex;
-    flex-wrap: wrap;
     width: 576px;
     margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .checkbox-group__box {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .checkbox-group__wrapper {
@@ -98,27 +103,22 @@
 
   .checkbox-group__title {
     .title;
-    width: 630px;
+    width: 220px;
     margin-bottom: 35px;
+    background-color: @white;
+    padding-left: 40px;
+    margin-left: -66px;
+    padding-right: 31px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      left: 42%;
-      top: 57px;
-      height: 3px;
-      background-color: @green;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 96%;
       left: 0;
       top: 57px;
       height: 3px;
       background-color: @green;
+      z-index: -1;
     }
   }
 
@@ -146,7 +146,6 @@
 
 @media (min-width: @desktop-width) {
   .checkbox-group__container {
-    flex-direction: row;
     width: 1125px;
     margin-bottom: 31px;
     margin-left: 110px;
@@ -177,22 +176,12 @@
     font-size: 36px;
     margin-bottom: 38px;
     margin-top: 25px;
-    width: 1220px;
+    margin-left: -41px;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      left: 25%;
-      top: 60px;
-      height: 3px;
-      background-color: @green;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 95%;
       left: 0;
       top: 60px;
       height: 3px;

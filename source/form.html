@@ -78,48 +78,52 @@
       <fieldset class="information-group">
         <div class="information-group__box">
           <h2 class="information-group__title">Контактные данные (владельца кота)</h2>
-          <p class="information-group__wrapper">
-            <label for="email" class="information-group__label">E-mail:*</label>
-            <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" class="information-group__input">
-            <svg class="information-group__icon" width="17" height="13" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-mail"></use>
-            </svg>
-          </p>
-          <p class="information-group__wrapper">
-            <label for="tel" class="information-group__label">Телефон:*</label>
-            <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" class="information-group__input">
-            <svg class="information-group__icon" fill="#222222" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-          </p>
+          <div class="information-group__container">
+            <p class="information-group__wrapper">
+              <label for="email" class="information-group__label">E-mail:*</label>
+              <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" class="information-group__input">
+              <svg class="information-group__icon" width="17" height="13" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </p>
+            <p class="information-group__wrapper">
+              <label for="tel" class="information-group__label">Телефон:*</label>
+              <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" class="information-group__input">
+              <svg class="information-group__icon" fill="#222222" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </p>
+          </div>
         </div>
       </fieldset>
       <fieldset class="comment-group">
-        <h2 class="comment-group__title">Комментарий</h2>
         <div class="comment-group__wrapper">
+          <h2 class="comment-group__title">Комментарий</h2>
           <label for="comment" class="comment-group__label"></label>
           <input type="text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота" class="comment-group__input">
         </div>
       </fieldset>
       <fieldset class="checkbox-group">
-        <h2 class="checkbox-group__title">Дополнительно</h2>
         <div class="checkbox-group__container">
-          <p class="checkbox-group__wrapper">
-            <input type="checkbox" id="sweetener" name="sweetener" class="visually-hidden checkbox-group__checkbox" checked>
-            <label for="sweetener" class="checkbox-group__label">Сахарозаменитель</label>
-          </p>
-          <p class="checkbox-group__wrapper">
-            <input type="checkbox" id="water" name="water" class="visually-hidden checkbox-group__checkbox">
-            <label for="water" class="checkbox-group__label">Питьевая вода</label>
-          </p>
-          <p class="checkbox-group__wrapper">
-            <input type="checkbox" id="milk" name="milk" class="visually-hidden checkbox-group__checkbox">
-            <label for="milk" class="checkbox-group__label">Молоко</label>
-          </p>
-          <p class="checkbox-group__wrapper">
-            <input type="checkbox" id="vitamins" name="vitamins" class="visually-hidden checkbox-group__checkbox">
-            <label for="vitamins" class="checkbox-group__label">Витамины</label>
-          </p>
+          <h2 class="checkbox-group__title">Дополнительно</h2>
+          <div class="checkbox-group__box">
+            <p class="checkbox-group__wrapper">
+              <input type="checkbox" id="sweetener" name="sweetener" class="visually-hidden checkbox-group__checkbox" checked>
+              <label for="sweetener" class="checkbox-group__label">Сахарозаменитель</label>
+            </p>
+            <p class="checkbox-group__wrapper">
+              <input type="checkbox" id="water" name="water" class="visually-hidden checkbox-group__checkbox">
+              <label for="water" class="checkbox-group__label">Питьевая вода</label>
+            </p>
+            <p class="checkbox-group__wrapper">
+              <input type="checkbox" id="milk" name="milk" class="visually-hidden checkbox-group__checkbox">
+              <label for="milk" class="checkbox-group__label">Молоко</label>
+            </p>
+            <p class="checkbox-group__wrapper">
+              <input type="checkbox" id="vitamins" name="vitamins" class="visually-hidden checkbox-group__checkbox">
+              <label for="vitamins" class="checkbox-group__label">Витамины</label>
+            </p>
+          </div>
         </div>
       </fieldset>
       <div class="form__container">
@@ -133,8 +137,11 @@
         <p class="map__text">приглашаем <span>к сотрудничеству</span> дилеров!</p>
         <p class="map__address"><span>ул. Большая</span> Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-      <iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.3208587159103!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589811999841!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.3208587159103!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589811999841!5m2!1sru!2sru" width="600" height="360" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <picture class="map__picture">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
         <source srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" media="(max-width: 767px)">
         <source srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x" media="(max-width: 1299px)">
         <source srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" media="(min-width: 1300px)">
