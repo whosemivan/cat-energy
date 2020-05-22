@@ -2,7 +2,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin-bottom: 21px;
   width: 100%;
   position: relative;
 }
@@ -10,15 +10,15 @@
 .checkbox-group__title {
   .subtitle;
   width: 280px;
-  margin-top: 22px;
-  margin-bottom: 28px;
+  margin-top: 23px;
+  margin-bottom: 31px;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
     left: 58%;
-    top: 40px;
+    top: 43px;
     height: 3px;
     background-color: @green;
   }
@@ -37,7 +37,19 @@
 }
 
 .checkbox-group__checkbox {
-  display: none;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .checkbox-group__checkbox + .checkbox-group__label::before {
@@ -65,6 +77,15 @@
   opacity: 0.3;
 }
 
+.checkbox-group__wrapper {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.checkbox-group__checkbox:focus + .checkbox-group__label::before,
+.checkbox-group__checkbox:hover + .checkbox-group__label::before {
+  border: 1px solid #bcbcbc;
+}
 
 @media (min-width: @tablet-width) {
   .checkbox-group__container {
@@ -80,19 +101,19 @@
   }
 
   .checkbox-group__wrapper {
-    &:first-child {
-      margin-right: 151px;
-      margin-bottom: 33px;
-    }
+    width: 201px;
+    min-height: 72px;
+    margin-bottom: 0;
+    margin-right: 144px;
 
-    &:nth-child(3) {
-      margin-right: 243px;
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 
   .checkbox-group {
     border: none;
-    margin-bottom: 45px;
+    margin-bottom: 14px;
   }
 
   .checkbox-group__label {
@@ -104,7 +125,7 @@
   .checkbox-group__title {
     .title;
     width: 220px;
-    margin-bottom: 35px;
+    margin-bottom: 53px;
     background-color: @white;
     padding-left: 40px;
     margin-left: -66px;
@@ -146,21 +167,21 @@
 
 @media (min-width: @desktop-width) {
   .checkbox-group__container {
-    width: 1125px;
-    margin-bottom: 31px;
-    margin-left: 110px;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  .checkbox-group__box {
+    margin: 0 auto;
   }
 
   .checkbox-group__wrapper {
-    margin-right: 164px;
+    margin-right: 133px;
+    width: 191px;
 
-    &:first-child {
-      margin-right: 134px;
-      margin-left: 25px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 223px;
+    &:nth-child(2n) {
+      margin-right: 133px;
     }
 
     &:last-child {
@@ -174,9 +195,9 @@
 
   .checkbox-group__title {
     font-size: 36px;
-    margin-bottom: 38px;
+    margin-bottom: 53px;
     margin-top: 25px;
-    margin-left: -41px;
+    margin-left: -42px;
 
     &::after {
       content: "";

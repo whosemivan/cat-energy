@@ -13,7 +13,7 @@
 
 .comment-group__title {
   .subtitle;
-  margin-top: 4px;
+  margin-top: 6px;
   margin-bottom: 29px;
   width: 128px;
   padding-right: 20px;
@@ -24,7 +24,7 @@
     position: absolute;
     right: 0;
     left: 249px;
-    top: 23px;
+    top: 26px;
     height: 3px;
     background-color: @green;
     z-index: -1;
@@ -34,9 +34,13 @@
 .comment-group__input {
   border: 1px solid #ededed;
   padding-left: 15px;
-  padding-bottom: 100px;
-  width: 261px;
-  height: 47px;
+  padding-bottom: 116px;
+  padding-top: 14px;
+  padding-right: 12px;
+  width: 251px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
   &::placeholder {
     font-size: 16px;
@@ -49,29 +53,41 @@
 
   &:active,
   &:focus {
-    border: 1px solid #444444;
+    border: 2px solid #444444;
     outline: none;
+    padding-left: 14px;
+    padding-bottom: 115px;
+    padding-top: 13px;
+    padding-right: 11px;
   }
 
   &:invalid {
-    border: 1px solid #ff8282;
+    border: 2px solid #ff8282;
   }
 }
 
 @media (min-width: @tablet-width) {
   .comment-group__input {
     width: 612px;
-    height: 55px;
-    padding-bottom: 114px;
+    height: 29px;
+    padding: 14px 1px 130px 17px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::placeholder {
       font-size: 20px;
+      line-height: 30px;
+    }
+
+    &:active,
+    &:focus {
+      padding: 13px 0 129px 16px;
     }
   }
 
   .comment-group {
     border: none;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .comment-group__title {
@@ -88,7 +104,7 @@
       position: absolute;
       right: 0;
       left: 0;
-      top: 37px;
+      top: 39px;
       height: 3px;
       background-color: @green;
     }
@@ -102,8 +118,14 @@
 
 @media (min-width: @desktop-width) {
   .comment-group__input {
-    width: 1203px;
+    width: 1199px;
     height: 55px;
+    padding: 1px 1px 116px 17px;
+
+    &:active,
+    &:focus {
+      padding: 0 0 115px 16px;
+    }
   }
 
   .comment-group__title {
@@ -117,7 +139,7 @@
       position: absolute;
       right: 0;
       left: 0;
-      top: 50px;
+      top: 53px;
       height: 3px;
       background-color: @green;
     }

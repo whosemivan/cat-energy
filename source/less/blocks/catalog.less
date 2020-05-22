@@ -26,7 +26,7 @@
   font-size: 12px;
   line-height: 16px;
   color: @grey;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
 }
 
 .catalog__field {
@@ -69,6 +69,10 @@
   margin-left: 8px;
 }
 
+.catalog__image--small {
+  margin-top: 33px;
+}
+
 .catalog__picture {
   width: 100%;
 }
@@ -78,7 +82,7 @@
   flex-direction: row;
 }
 
-.catalog-title__wrapper {
+.catalog__container {
   margin-right: 21px;
   margin-top: 8px;
 }
@@ -104,11 +108,11 @@
   }
 }
 
-.catalog-show {
+.catalog__item--show {
   min-height: 208px;
 }
 
-.catalog-show__title {
+.catalog__title--show {
   width: auto;
   margin-bottom: 0;
   padding-top: 65px;
@@ -120,7 +124,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 0;
+    top: 13px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -130,16 +134,20 @@
   font-size: 12px;
   line-height: 16px;
   color: @grey;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   margin-top: 8px;
   margin-bottom: 20px;
 }
 
-.catalog__link-show {
+.catalog__link--show {
   .button;
   background-color: #f2f2f2;
   color: @grey;
   padding: 10px 30%;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
@@ -158,14 +166,19 @@
 
   .catalog__item {
     background-color: #ededed;
-    width: 324px;
+    width: 321px;
     min-height: 431px;
-    margin-bottom: 140px;
+    margin-bottom: 138px;
 
     &:nth-child(7),
     &:nth-child(8) {
       margin-bottom: 0;
     }
+  }
+
+  .catalog__item--show {
+    background-color: @white;
+    border-top: 1px solid #ededed;
   }
 
   .catalog--show {
@@ -193,11 +206,12 @@
 
   .catalog__title {
     font-size: 60px;
-    margin-bottom: 172px;
+    margin-bottom: 166px;
     margin-left: 0;
+    margin-top: -1px;
   }
 
-  .catalog-title__wrapper {
+  .catalog__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,15 +259,15 @@
     padding: 10px 29.5%;
   }
 
-  .catalog-show__title::before {
+  .catalog__title--show::before {
     background-image: url("../img/icon-plus.svg");
     width: 60px;
     height: 60px;
-    top: 17px;
+    top: 28px;
   }
 
-  .catalog-show__title {
-    padding-top: 132px;
+  .catalog__title--show {
+    padding-top: 137px;
     margin-bottom: 19px;
     margin-left: 2px;
   }
@@ -268,7 +282,7 @@
     margin-bottom: 85px;
   }
 
-  .catalog__link-show {
+  .catalog__link--show {
     padding: 10px 24.5%;
   }
 }
@@ -279,8 +293,9 @@
   }
 
   .catalog__item {
-    width: 245px;
-    min-height: 430px;
+    width: 243px;
+    min-height: 428px;
+    margin-bottom: 142px;
   }
 
   .catalog__link {
@@ -300,6 +315,10 @@
   }
 
   .catalog__title {
-    margin-top: 16px;
+    margin-top: -13px;
+  }
+
+  .catalog__link--show {
+    padding: 10px 40px;
   }
 }

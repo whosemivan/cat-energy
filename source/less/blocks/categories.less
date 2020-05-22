@@ -18,7 +18,7 @@
   background-color: #f2f2f2;
   width: 88%;
   min-height: 256px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@
   color: @grey;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   margin-bottom: 36px;
   position: relative;
 
@@ -114,6 +114,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.categories__link:hover {
+  &::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 11px;
   }
 }
 
@@ -187,7 +196,7 @@
 
 @media (min-width: @desktop-width) {
   .categories {
-    width: 92%;
+    width: 1220px;
     margin-bottom: 43px;
   }
 
@@ -209,8 +218,8 @@
   }
 
   .categories__item {
-    width: 43.1%;
-    margin-right: 6%;
+    width: 570px;
+    margin-right: 80px;
 
     &:last-child {
       margin-right: 0;

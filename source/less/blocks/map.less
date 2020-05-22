@@ -14,16 +14,16 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
   width: 127px;
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .map__address {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 20px;
   width: 140px;
@@ -35,7 +35,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .map__map {
@@ -59,21 +59,22 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    margin-bottom: -4px;
     padding-top: 0;
   }
 
   .map__wrapper {
     width: 630px;
     justify-content: space-between;
-    margin-top: 65px;
-    margin-bottom: 62px;
+    margin-top: 63px;
+    margin-bottom: 58px;
   }
 
   .map__text {
     font-size: 20px;
     line-height: 25px;
     width: 167px;
+    padding-top: 2px;
+    padding-left: 2px;
   }
 
   .map__address {
@@ -82,10 +83,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-right: 2px;
   }
 
   .map__map {
-    height: 390px;
+    height: 395px;
   }
 
   .map__image {
@@ -94,6 +96,10 @@
 
   .map__picture {
     height: 390px;
+  }
+
+  .map__city {
+    margin-top: 19px;
   }
 }
 
@@ -104,23 +110,26 @@
 
   .map__wrapper {
     position: absolute;
-    z-index: 2;
-    left: 121px;
+    z-index: 4;
+    left: 43px;
     top: 30px;
     background-color: @white;
-    width: 38%;
-    padding: 70px 12px;
+    width: 405px;
+    padding: 62px 82px;
+    padding-top: 63px;
   }
 
   .map__text {
     font-size: 20px;
     width: 170px;
-    margin-right: 80px;
+    margin-right: 84px;
+    margin-left: -10px;
   }
 
   .map__address {
     font-size: 16px;
     width: 164px;
+    align-items: flex-start;
   }
 
   .map__map {

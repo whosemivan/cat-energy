@@ -3,6 +3,7 @@
   border-bottom: 1px solid #ededed;
   padding: 0;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .input-group__label {
@@ -20,20 +21,26 @@
 .input-group__input {
   .input;
   width: 210px;
+  padding: 13px 3px 11px 15px;
+
+  &:active,
+  &:focus {
+    padding: 12px 2px 10px 14px;
+  }
 }
 
 .input-group__wrapper {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 14px;
-  margin-top: 16px;
+  margin-top: 0;
 
   &:nth-child(2) .input-group__input {
     width: 185px;
   }
 
   &:last-child .input-group__input {
-    width: 153px;
+    width: 151px;
   }
 }
 
@@ -42,59 +49,81 @@
     border: none;
     padding-left: 0;
     padding-top: 31px;
-    margin-bottom: 55px;
+    margin-bottom: 43px;
   }
 
   .input-group__container {
-    width: 630px;
+    width: 633px;
     margin: 0 auto;
   }
 
   .input-group__input {
-    width: 548px;
+    width: 537px;
+    font-size: 20px;
+    padding: 15px 10px 12px 17px;
 
     &::placeholder {
       font-size: 20px;
     }
+
+    &:active,
+    &:focus {
+      padding: 14px 9px 11px 16px;
+    }
   }
 
   .input-group__wrapper {
-    margin-bottom: 23px;
-    width: 630px;
+    margin-bottom: 20px;
+    width: 633px;
+    justify-content: space-between;
 
     &:nth-child(2) .input-group__input {
-      width: 517px;
+      width: 508px;
     }
 
     &:last-child .input-group__input {
-      width: 478px;
+      width: 468px;
     }
   }
 
   .input-group__label {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 0;
+    padding-left: 4px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .input-group {
-    margin-right: 20px;
+    margin-right: 16px;
     padding: 0;
     width: 570px;
     margin-bottom: 30px;
   }
 
   .input-group__input {
-    width: 488px;
+    width: 486px;
+    padding: 15px 1px 12px 17px;
+
+    &:active,
+    &:focus {
+      padding: 14px 0 11px 16px;
+    }
+  }
+
+  .input-group__label {
+    padding-left: 0;
   }
 
   .input-group__wrapper {
     margin-top: 0;
     margin-left: 0;
+    width: 570px;
+    margin-bottom: 20px;
 
     &:first-child {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     &:nth-child(2) .input-group__input {
@@ -103,7 +132,6 @@
 
     &:last-child .input-group__input {
       width: 417px;
-      margin-top: 10px;
     }
   }
 }
